@@ -1,0 +1,1 @@
+export const gte = (value, other) => value >= other

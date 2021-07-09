@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.pointer {
+  cursor: pointer;
+}
+.tick line {
+  stroke: #c0c0bb;
+}
+.tick text,
+.tick foreignObject p {
+  font-family: "Poppins", sans-serif;
+  fill: #635f5d;
+}
+.tick foreignObject p {
+  text-align: center;
+  margin-top: 1em;
+  line-height: 1.1em;
+  color: #635f5d;
+}
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 2em !important;
+}
+
+.mark {
+  fill: #137b80;
+}
+
+.axis-label {
+  fill: #635f5d;
+  font-size: 2.5em;
+}
+.marks circle {
+  fill: #137b80;
+}
+.marks path {
+  fill: none;
+  stroke: #137b80;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+/* WorldMap START */
+.country,
+.land {
+  fill: #ececec;
+}
+
+.sphere {
+  fill: #fbfbfb;
+}
+.interiors {
+  fill: none;
+  stroke: #d9dfe0;
+  stroke-width: 1;
+}
+.cityPoint {
+  fill: #137b80;
+  opacity: 0.3;
+}
+.migrantPoint {
+  fill: #c4421b;
+  opacity: 0.3;
+  transition: none;
+}
+
+.graticules {
+  fill: none;
+  stroke: #dadada;
+}
+/* WorldMap END */
+
+/* Select START */
+.menu,
+.label-menu {
+  font-size: 1.6em;
+}
+.menu {
+  text-align-last: center;
+}
+
+.menu option {
+  font-size: 1rem !important;
+}
+/* Select END */
+
+/* Animation END */
+
+circle,
+line,
+text,
+g,
+path {
+  transition: all 0.65s ease-in;
+}
+
+/* Animation END */
+
+button {
+  padding: 5px 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid #007bff;
+  background-color: transparent;
+  color: #007bff;
+  border-radius: 12px;
+  transition: all 0.2s ease-in;
+  transition-property: box-shadow, background-color, color;
+}
+button:hover {
+  color: white;
+  background-color: #007bff;
+}
+/*button:focus,*/
+button:active {
+  box-shadow: -2px -2px 5px rgba(0, 123, 255, 0.3),
+    -2px 2px 5px rgba(0, 123, 255, 0.3), 2px -2px 5px rgba(0, 123, 255, 0.3),
+    2px 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+/*multiple start*/
+
+.histogram-label {
+  fill: #635f5d;
+  font-size: 0.65em;
+}
+.histogram-tick line {
+  stroke: #ececec;
+}
+.histogram-tick text {
+  font-size: 0.75em;
+  font-family: "Poppins", sans-serif;
+  fill: #635f5d;
+}
+.histogram-tick--left text {
+  font-size: 0.6em;
+}
+
+/*multiple end*/
+
+/* coronavirusLine START */
+.graph-line {
+  fill: none;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  opacity: 0.4;
+  transition: all 0s ease-in;
+}
+.graph-line * {
+  transition: all 0s ease-in;
+
+}
+
+.graph-line.active {
+  opacity: 1;
+  z-index: 50;
+  stroke-width: 4px;
+}
+
+.marker-line,
+.marker-line line {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.marker-line line {
+  stroke: #dedede;
+}
+
+.marker-line text {
+  font-size: 1rem;
+  fill: #565656;
+  stroke-width: initial;
+  stroke: initial;
+}
+.marker-line .domain {
+  display: none;
+}
+
+.text-label {
+  font-size: 1.75em;
+}
+.main-label {
+  font-size: 2em;
+}
+.axis-label-info {
+  fill: #808080;
+  font-size: 24px;
+}
+
+/* coronavirusLine END */
+
+/* voronoi START */
+
+.voronoi path {
+  fill: transparent;
+  stroke: transparent;
+}
+/* voronoi END */
+
+/* tooltips START */
+.tooltip, .tooltip > * {
+  transition: none
+}
+.tooltip text {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+/* tooltips END */
+
+/* diagram START */
+/* diagram END */
